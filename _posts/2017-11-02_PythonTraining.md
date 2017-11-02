@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python"
+title: Python
 date: 2017-11-02
 tags: Python
 ---
