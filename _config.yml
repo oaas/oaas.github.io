@@ -1,48 +1,65 @@
 # Basic
 title: 李 正
-subtitle: 三人行，必有我师
-welcome_message: 欢迎观看我的博客，如果有兴趣，请联系我。谢谢！
+subtitle:  三人行，必有我师
 description: Hi, 我是Lambert, 高级运维开发工程师，现居上海，关注领域Python, Docker, Big Data, Cloud Computing。
-creator: <a href="http://onev.cat">@onevcat</a>
+welcome_message: 欢迎观看我的博客，如果有兴趣，请联系我。谢谢！
+# 头像里面的标题
+avatarTitle: Lambert
+# 头像里面的描述
+avatarDesc: 运维/DevOps
+url: "http://www.lzzzz.top"
 
-url: "http://vno.onevcat.com"
+social:
+    weibo: 5366874726 
+    github: Leejung168
+    # twitter: 
+    mail: lz8888888888@gmail.com
+
+# 百度统计 
+# 使用博客模板请去掉或者更换 id 
+baidu:
+    id: 8ba1c6be0953b6f9c2ba38e57f615421  
+
+# Google Analytics
+# 使用博客模板请去掉或者更换 id
+ga:
+    id: UA-84134159-3   
+    host: auto  
+
+
+# 《----------------- 上面的信息修改成你自己的 ---------------------------》
+#
+#
+#  _post/ 下的文章更换成你自己的文章
+#  帮忙star一下，感谢~😆 地址： https://github.com/leopardpan/leopardpan.github.io
+#
+#
+# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
+
 
 permalink: /:year/:month/:title/
-
 # Format
 highlighter: rouge
 
+textColor: #FF0000
+
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: red
+cover_color: clear
 
 # The blog button should not be removed.
 blog_button:
-    title: Blog
-    description: Visit blog
+    title: 博客主页
 
-# Navigation buttons in the front page.
+# Navigation buttons in the front page.s
 nav:
-    - {title: Projects, description: My Projects, url: 'http://github.com'}
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 关于我, description: about, url: '/about'}      
+    
 
 # Pagination
-gems: [jekyll-paginate]
-paginate: 10
+gems: [jekyll-paginate,jekyll-sitemap]
+paginate: 20
 paginate_path: "page/:num/"
 
-# Comment
-comment:
-    disqus: vno-jekyll
-    # duoshuo: 
-    
-# Social
-social:
-    weibo: onevcat
-    github: onevcat
-    twitter: onevcat
-    gplus: 107108267983477358170
-    mail: lz8888888888@gnauk,cin
 
-# Google Analytics
-ga:
-    # id: your_ga_id
-    # host: your_host

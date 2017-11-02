@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-<header class="panel-cover {% if page.layout == 'post' or page.layout == 'page' %}panel-cover--collapsed{% endif %}" style="background-image: url('/assets/images/background-cover.jpg')">
-=======
 <header class="panel-cover {% if page.layout == 'post' or page.layout == 'page' %}panel-cover--collapsed{% endif %}" style="background-image: url('/images/background-cover.jpg')">
->>>>>>> aa5777dd3fb36d2459a757ef94d4e1c7e67b5ff8
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-<<<<<<< HEAD
-
-        <a href="/#blog" title="前往 {{ site.title }} 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="{{ site.title }} logo" class="panel-cover__logo logo" /></a>
-=======
         <!-- 头像效果-start -->
         <div class="ih-item circle effect right_to_left">            
             <a href="/#blog" title="前往 {{ site.title }} 的主页" class="blog-button">
@@ -32,7 +24,6 @@
             </a>
         </div>
         <!-- 头像效果-end -->
->>>>>>> aa5777dd3fb36d2459a757ef94d4e1c7e67b5ff8
         <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for {{ site.title }}" class="blog-button">{{ site.title }}</a></h1>
         {% if site.subtitle %}
         <span class="panel-cover__subtitle panel-subtitle">{{site.subtitle}}</span>
@@ -45,25 +36,13 @@
         <p class="panel-cover__description">{{ site.welcome_message }}</p>
         {% endif %}
         
-<<<<<<< HEAD
-=======
 
->>>>>>> aa5777dd3fb36d2459a757ef94d4e1c7e67b5ff8
         <div class="navigation-wrapper">
           <div>
             <nav class="cover-navigation cover-navigation--primary">
               <ul class="navigation">
                 <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
                 {% for item in site.nav %}
-<<<<<<< HEAD
-                  <li class="navigation__item"><a href="{{item.url}}" target="_blank" title="{{item.description}}">{{item.title}}</a></li>
-                {% endfor %}
-              </ul>
-            </nav>
-          </div>
-          
-          <div>{% include social.html %}</div>
-=======
                   <li class="navigation__item"><a href="{{item.url}}" title="{{item.description}}">{{item.title}}</a></li>
                 {% endfor %}
               </ul>
@@ -72,7 +51,6 @@
         </div>
 
 
->>>>>>> aa5777dd3fb36d2459a757ef94d4e1c7e67b5ff8
         </div>
       </div>
     </div>
