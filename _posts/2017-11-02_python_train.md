@@ -2,7 +2,7 @@
 layout: post
 title: Python
 date: 2017-11-02
-tags: Python
+tag: 工具
 ---
 
 # Python
@@ -151,4 +151,3 @@ finally:
 * http://python3-cookbook-personal.readthedocs.io/zh_CN/latest/
 * https://github.com/
 
-<br>
