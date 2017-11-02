@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04e56508-689d-4c3e-b09c-6356ba12978a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-10-25-Xcode8.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/background-cover.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/payimg/alipay.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/payimg/alipayimg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/payimg/close.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/payimg/code-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/payimg/cy-reward-title-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/payimg/radio1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/payimg/radio2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/payimg/wechat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/payimg/weipayimg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Wifilist/PastedGraphic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Wifilist/WLAN.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Wifilist/entitlement.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Wifilist/infoplist.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Wifilist/systemVersion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/Xcode8/image9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/codeless/code.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/codeless/codeless1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/codeless/codeless2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/codeless/image01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/codeless/image02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/codeless/image03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/codeless/image04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/codeless/image05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/codeless/img1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/codeless/img2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/iBeacon/iBeacon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/icon/image01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/jekyll/image1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/markdown/image1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/markdown/image2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/markdown/image3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/ck.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/image01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/image02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/ipod1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/ipod2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/mouse1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/mouse2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/notebook.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/wb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/posts/tfimg/wq.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/readme/icon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/readme/img1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/readme/img2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/readme/img3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/readme/img4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/readme/img5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNAME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/pages_list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/posts_collate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/setup" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/JB/tags_list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/new-old.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/styles/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-08-25-HEXO搭建个人博客.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-09-26-iOS9_Note.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-01-09-iOS_OTA.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-04-02-CocoaPod_Use.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-04-07-iBeacon.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-06-02-Develop_Tool.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-06-12-HEXO_Advanced.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-07-05-MachineLearning_introduce.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-07-07-iOSMachineLearning_TensorFlow.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-07-13-GitTutorial.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-07-15-Codeless.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-08-04-PythonTestAutomationiOS.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-09-23-iOSLowerLeftAppicon.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-10-14-jekyll_tutorials1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-11-03-TensorFlowOniOSUse1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-11-16-macTips.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-11-20-markdownTool.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-11-20-neural_networks_using_TensorFlow.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-12-02-iOS_Dev_Note.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-01-03-iOS_Wifilist.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/about.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/tag-icon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/highlight.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/p.html" afterPath="$PROJECT_DIR$/_posts/2017-10-02-Python_training.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/comments.html" afterPath="$PROJECT_DIR$/_includes/comments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/external.html" afterPath="$PROJECT_DIR$/_includes/external.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/head.html" afterPath="$PROJECT_DIR$/_includes/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/pagination.html" afterPath="$PROJECT_DIR$/_includes/pagination.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/read-more.html" afterPath="$PROJECT_DIR$/_includes/read-more.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/side-panel.html" afterPath="$PROJECT_DIR$/_includes/side-panel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/page.html" afterPath="$PROJECT_DIR$/_layouts/page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/tomorrow.css" afterPath="$PROJECT_DIR$/css/tomorrow.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feed.xml" afterPath="$PROJECT_DIR$/feed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+    </list>
+    <ignored path="oaas.github.io.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="oaas.github.io" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="about.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/about.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-10-02-Python_training.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-10-02-Python_training.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages_list" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/JB/pages_list">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/styles/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comments.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/comments.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/JB/setup">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tags_list" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/JB/tags_list">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/about.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1440" />
+    <option name="y" value="-219" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oaas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04e56508-689d-4c3e-b09c-6356ba12978a" name="Default" comment="" />
+      <created>1509607286769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509607286769</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1440" y="-219" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1995">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/new-old.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-08-25-HEXO搭建个人博客.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-598">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="99" column="34" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-10-02-Python_training.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/JB/setup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/JB/tags_list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/JB/pages_list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/comments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

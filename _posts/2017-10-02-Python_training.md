@@ -1,3 +1,11 @@
+---
+layout: post
+title: Python Training
+date: 2017-11-02
+tags: 工具
+---
+
+
 # Python
 ## 1. 什么是Python？特色？
 >Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together
