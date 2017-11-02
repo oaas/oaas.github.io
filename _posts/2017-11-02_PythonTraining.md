@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Python讲座"
-date: 2017-11-02
-tags: Python
+title: "iOS设备左下角出现Appicon"
+date: 2016-09-23
+tags: iOS
 ---
 
 # Python
