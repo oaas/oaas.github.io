@@ -1,8 +1,8 @@
 # Basic
-title: 李 正
-subtitle: 三人行，必有我师
-welcome_message: 欢迎观看我的博客，如果有兴趣，请联系我。谢谢！
-description: Hi, 我是Lambert, 高级运维开发工程师，现居上海，关注领域Python, Docker, Big Data, Cloud Computing。
+title: Vno Jekyll
+subtitle: A blog-orientation theme for Jekyll
+welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
+description: Vno Jekyll is a port of my Ghost theme vno.
 creator: <a href="http://onev.cat">@onevcat</a>
 
 url: "http://vno.onevcat.com"
@@ -22,7 +22,8 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://github.com'}
+    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
 gems: [jekyll-paginate]
@@ -40,7 +41,7 @@ social:
     github: onevcat
     twitter: onevcat
     gplus: 107108267983477358170
-    mail: lz8888888888@gnauk,cin
+    mail: onev@onevcat.com
 
 # Google Analytics
 ga:
