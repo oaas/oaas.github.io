@@ -1,3 +1,10 @@
+---
+layout: post
+title: 打造自己的docker集群管理环境
+date: 2017-11-05
+tags: Kubernetes
+---
+
 #第一式： 打造自己的Kubernetes
 
 ## 目标：
@@ -79,11 +86,18 @@
 * Iptables版本在1.4.11以上
 * Docker版本1.6.2+以上
 
+#### 注意： selinux或iptables会影响集群的通信，因此实验环境请将其禁用，请在集群的环境下执行如下命令
+
+```
+setenforce 0   # 禁用selinux
+iptables -F    # 清空iptables规则
+```
+
 ##### 我的实验环境：
 ```
     name               ip              services
 srv-k8s-master1    10.1.96.232       master所有组件, etcd
-srv-k8s-node1      10.1.96.233       node所有组件
+srv-k8s-node2      10.1.96.233       node所有组件
 ```
 
 ##### 在srv-k8s-master1，即master节点操作：
@@ -223,7 +237,221 @@ srv-k8s-node1      10.1.96.233       node所有组件
    
    > Pod1想要发送数据包给Pod2，之前说过，每个Pod有自己的IP地址，数据流量经过Veth0(另一端连接到docker0)，然后路由到flannel0，数据包被分装后经过node的物理网卡eth0发送给node2，node2进行进行解包，最终将数据发给Pod4.
    
-    
+11 . 安装Kubernetes Master
+   > 一共有五个关于kubernetes的包:
+   
+   > **kubernetes**: 仅仅是一个链接包，链接kubernetes-master, kubernetes-client, kubernetes-node;
+   
+   > **kubernetes-master**: 包含master damon等主要的组建；
+   
+   > **kubernetes-client**: 命令行工具 kubectl；
+   
+   > **kubernetes-node**: node上安装的包；
+   
+   > **kubernets-unit-test**: 包含一些测试脚本，模版等文件；
+ 
+
+   ```
+   [root@srv-k8s-master1 ~]# yum install -y kubernetes-master kubernetes-client
+   ```
+12 . 生成的kubernetes配置文件如下：
+
+   ```
+   [root@srv-k8s-master1 ~]# ll /etc/kubernetes/*
+	-rw-r--r--. 1 root root 767 Jul  3 11:33 /etc/kubernetes/apiserver   # API Server配置文件
+	-rw-r--r--. 1 root root 655 Jul  3 11:33 /etc/kubernetes/config    # 环境变量文件
+	-rw-r--r--. 1 root root 189 Jul  3 11:33 /etc/kubernetes/controller-manager     #Controller Manager配置文件
+	-rw-r--r--. 1 root root 111 Jul  3 11:33 /etc/kubernetes/scheduler    # Scheduler Server配置文件
+   ```
+   
+13 . 修改apiserver的配置文件
+
+```
+[root@srv-k8s-master1 ~]# cat /etc/kubernetes/apiserver
+# API Server的监听地址，改为0.0.0.0
+KUBE_API_ADDRESS="--insecure-bind-address=0.0.0.0"
+
+# API Server的监听端口
+KUBE_API_PORT="--insecure-port=8080"
+
+# Node节点的监听端口
+# KUBELET_PORT="--kubelet-port=10250"
+
+# ETCD 服务器的连接信息
+KUBE_ETCD_SERVERS="--etcd-servers=http://127.0.0.1:2379"
+
+# 集群使用的IP地址段---> 通过"etcdctl  get /coreos.com/network/config"获取
+KUBE_SERVICE_ADDRESSES="--service-cluster-ip-range=192.168.0.0/16"
+
+# 默认的控制策略, 由于没有证书，所以先禁用
+#KUBE_ADMISSION_CONTROL="--admission-control=NamespaceLifecycle,NamespaceExists,LimitRanger,SecurityContextDeny,ServiceAccount,ResourceQuota"
+```
+
+14 . 启动master上的三个服务：
+
+```
+[root@srv-k8s-master1 ~]# systemctl start kube-apiserver
+[root@srv-k8s-master1 ~]# systemctl start kube-scheduler
+[root@srv-k8s-master1 ~]# systemctl start kube-controller-manager
+
+[root@srv-k8s-master1 ~]# systemctl enable kube-apiserver
+[root@srv-k8s-master1 ~]# systemctl enable kube-scheduler
+[root@srv-k8s-master1 ~]# systemctl enable kube-controller-manager
+
+# 检查是否启动成功  可以看到 apiserve, schedule, controll进程
+[root@srv-k8s-master1 ~]# netstat -nlpt
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 127.0.0.1:2380          0.0.0.0:*               LISTEN      12706/etcd
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1163/sshd
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1772/master
+tcp6       0      0 :::10251                :::*                    LISTEN      13753/kube-schedule
+tcp6       0      0 :::6443                 :::*                    LISTEN      13739/kube-apiserve
+tcp6       0      0 :::2379                 :::*                    LISTEN      12706/etcd
+tcp6       0      0 :::10252                :::*                    LISTEN      13768/kube-controll
+tcp6       0      0 :::8080                 :::*                    LISTEN      13739/kube-apiserve
+tcp6       0      0 :::22                   :::*                    LISTEN      1163/sshd
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1772/master
+```
+
+15 . 在安装node之前，需要先安装和配置docker和flannel服务
+
+```
+# 安装docker和flannel服务
+[root@srv-k8s-node2 ~]# yum install -y docker flannel
+
+# 启动 flanneld
+[root@srv-k8s-node2 ~]# systemctl start flanneld
+[root@srv-k8s-node2 ~]# systemctl enable flanneld
+
+[root@srv-k8s-node2 ~]# cat /etc/sysconfig/flanneld     #修改flanneld, 目的见master讲解
+# etcd的连接地址
+FLANNEL_ETCD_ENDPOINTS="http://10.1.96.232:2379"
+# IP网段
+FLANNEL_ETCD_PREFIX="/coreos.com/network"
+
+# 查看flanneld获取到的网段等信息
+[root@srv-k8s-node2 ~]# cat /run/flannel/subnet.env
+FLANNEL_NETWORK=192.168.0.0/16
+FLANNEL_SUBNET=192.168.96.1/24
+FLANNEL_MTU=1472
+FLANNEL_IPMASQ=false
+
+# 修改docker0的ip地址，mtu等
+[root@srv-k8s-node2 ~]# grep OPTIONS /etc/sysconfig/docker
+OPTIONS='--selinux-enabled --log-driver=journald --signature-verification=false --bip=192.168.96.1/24 --mtu=1472 --ip-masq=false'
+
+# 启动docker
+[root@srv-k8s-node2 ~]# systemctl start docker
+[root@srv-k8s-node2 ~]# systemctl enable docker
+
+# 验证
+[root@srv-k8s-node2 ~]# ip add   | grep inet
+    inet 127.0.0.1/8 scope host lo
+    inet6 ::1/128 scope host
+    inet 10.1.96.233/24 brd 10.1.96.255 scope global ens33
+    inet6 fe80::20c:29ff:fedf:c0f0/64 scope link
+    inet 192.168.96.0/16 scope global flannel0
+    inet 192.168.96.1/24 scope global docker0
+```
+
+16 . 安装node
+
+```
+# 安装kubernetes-node包
+[root@srv-k8s-node2 ~]# yum install -y kubernetes-node
+
+# 修改环境变量文件，将KUBE_MASTER，即API Server的IP端口指向master的ip地址加api监听端口
+[root@srv-k8s-node2 ~]# grep "KUBE_MASTER" /etc/kubernetes/config
+KUBE_MASTER="--master=http://10.1.96.232:8080"
+
+# 修改kubelet的配置文件，配置内容如下：
+[root@srv-k8s-node2 ~]# cat /etc/kubernetes/kubelet
+# kubelet的监听地址
+KUBELET_ADDRESS="--address=0.0.0.0"
+
+# kubelete的监听端口
+# KUBELET_PORT="--port=10250"
+
+# node节点的名字
+KUBELET_HOSTNAME="srv-k8s-node2"
+
+# api server的连接地址
+KUBELET_API_SERVER="--api-servers=http://10.1.96.232:8080"
+
+# 启动kubelet和kube-proxy进程
+[root@srv-k8s-node2 ~]# systemctl start kubelet
+[root@srv-k8s-node2 ~]# systemctl start kube-proxy
+
+# 开机自启动
+[root@srv-k8s-node2 ~]# systemctl enable kubelet
+[root@srv-k8s-node2 ~]# systemctl enable kube-proxy
+
+```
+
+17 .  证实集群是否搭建成功（srv-k8s-master1）
+  > 如果集群中有错误，请按照之前的步骤查找原因；
+
+```
+# node2是ready状态
+[root@srv-k8s-master1 ~]# kubectl get nodes
+NAME            STATUS    AGE
+srv-k8s-node2   Ready     3m
+
+# scheduler和controller manger状态是正常，etcd也正常
+[root@srv-k8s-master1 ~]# kubectl get cs
+NAME                 STATUS    MESSAGE              ERROR
+scheduler            Healthy   ok
+controller-manager   Healthy   ok
+etcd-0               Healthy   {"health": "true"}
+
+# 集群的入口
+[root@srv-k8s-master1 ~]# kubectl cluster-info
+Kubernetes master is running at http://localhost:8080
+```
+
+18 . 万事俱备，跑一个容器试试呗；
+> kubectl run ${replication controller name} --image=${image name} --replicas=${number of replicas} [--port=${exposing port}]
+
+> 注意： 资源(pods, services, rc等)名字不能重复，因为在集群中名字是唯一的； 
+
+```
+[root@srv-k8s-master1 ~]# kubectl run hello-nginx --image=nginx --replicas=2 --port=80
+[root@srv-k8s-master1 ~]# kubectl get pods
+NAME                           READY     STATUS    RESTARTS   AGE
+hello-nginx-2471083592-1z023   1/1       Running   0          3m
+hello-nginx-2471083592-fh9h7   1/1       Running   0          3m
+[root@srv-k8s-master1 ~]# kubectl get rs
+NAME                        DESIRED   CURRENT   READY     AGE
+hello-nginx-2471083592      2         2         0         24m
+my-first-nginx-3504586902   2         2         0         9m
+```
+
+19 . 为了使外部能够访问我们的rs, 需要暴露nginx的80端口
+
+```
+[root@srv-k8s-master1 ~]# kubectl expose rs hello-nginx-2471083592 --port=80 --type=LoadBalancer
+service "hello-nginx-2471083592" exposed
+
+[root@srv-k8s-master1 ~]# kubectl get service
+NAME                     CLUSTER-IP        EXTERNAL-IP   PORT(S)        AGE
+hello-nginx-2471083592   192.168.218.195   <pending>     80:30340/TCP   3m
+kubernetes               192.168.0.1       <none>        443/TCP        1h
+
+[root@srv-k8s-master1 ~]# kubectl describe service hello-nginx
+Name:			   hello-nginx-2471083592
+Namespace:		default
+Labels:			pod-template-hash=2471083592
+		       	run=hello-nginx
+Selector:	    	pod-template-hash=2471083592,run=hello-nginx
+Type:		 		LoadBalancer
+IP:					192.168.218.195
+Port:				<unset>	80/TCP
+NodePort:			<unset>	30340/TCP
+Endpoints:
+Session Affinity:	None
+No events.
+```
 
 
 
