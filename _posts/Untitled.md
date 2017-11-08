@@ -291,5 +291,117 @@ No events.
 #####  如下图所示，从$node_ip+30812或ClusterIp访问的流量通过负载均衡的机制被重定向到node节点对应的pod上。
 
 ![](https://raw.githubusercontent.com/oaas/kubernetes/master/chapter3/eti.png)
-eti.png
 
+
+## 更加灵活的管理容器
+
+###### 在Kubernetes中，Pod是最小的计算单元，我们已经知道Pod在基本用法：Pod通常是被replication controller管理，然后通过service暴露。 接下来我们讨论两个新的功能： Job和DaemonSet，这两个功能可以使我们更加高效的使用Pod.
+
+#### 什么是Job Pod和DamonSet Pod？
+
+> Job Pod：Pod完成任务之后将会被终止;
+
+> DamondSet Pod: Pod会在每一个node节点上创建；
+
+####  两个新的功能都属于Kubernetes API的扩展。此外， daemonSet类型的Pod默认是被禁用的，因此需要启用之后才能使用。通过一下方式启用daemonSet:
+
+
+```
+# 1. 添加--runtime-config在apiserver的配置文件中
+[root@srv-k8s-master1 ~]# grep "KUBE_API_ARGS" /etc/kubernetes/apiserver
+KUBE_API_ARGS = "--runtime-config=extensions/v1beta1/daemonsets=true"
+
+# 2. 重启使其生效
+[root@srv-k8s-master1 ~]# systemctl restart kube-apiserver
+
+# 3. 验证是否成功开启
+[root@srv-k8s-master1 ~]# curl http://localhost:8080/apis/extensions/v1beta1
+{
+  "kind": "APIResourceList",
+  "groupVersion": "extensions/v1beta1",
+  "resources": [
+    {
+      "name": "daemonsets",
+      "namespaced": true,
+      "kind": "DaemonSet"
+    },
+    
+......    
+```
+
+
+#### 创建一个Job Pod
+
+```
+# 1. 准备yaml文件, 如果是一个Job Pod，restartPolicy应该被设置为Never或OnFailure. 因为指定的工作完成后，Pod就会被终止；
+[root@srv-k8s-master1 ~]# cat job-dpkg.yaml
+apiVersion: extensions/v1beta1
+kind: Job
+metadata:
+  name: package-check
+spec:
+  selector:
+    matchLabels:
+      image: ubuntu
+      test: dpkg
+  template:
+    metadata:
+      labels:
+        image: ubuntu
+        test: dpkg
+        owner: lz
+    spec:
+      containers:
+      - name: package-check
+        image: ubuntu
+        command: ["dpkg-query", "-l"]
+      restartPolicy: Never
+
+# 2. 创建      
+[root@srv-k8s-master1 ~]# kubectl create -f job-dpkg.yaml
+job "package-check" created
+
+ # 3. 验证结果
+ [root@srv-k8s-master1 ~]# kubectl get job
+NAME            DESIRED   SUCCESSFUL   AGE
+package-check   1         1            2m
+
+[root@srv-k8s-master1 ~]# kubectl describe job package-check
+Name:		package-check
+Namespace:	new-namespace
+Image(s):	ubuntu
+Selector:	image=ubuntu,test=dpkg
+Parallelism:	1
+Completions:	1
+Start Time:	Tue, 07 Nov 2017 19:29:59 -0500
+Labels:		image=ubuntu
+		owner=lz
+		test=dpkg
+Pods Statuses:	0 Running / 1 Succeeded / 0 Failed
+No volumes.
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason			Message
+  ---------	--------	-----	----			-------------	--------	------			-------
+  1m		1m		1	{job-controller }			Normal		SuccessfulCreate	Created pod: package-check-2pbkx
+  
+# 4. 名为package-check-2pbkx的pod在执行完成dpkg命令后就退出了
+[root@srv-k8s-master1 ~]# kubectl logs package-check-2pbkx
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                     Version                       Architecture Description
++++-========================-=============================-============-======================================================================
+ii  adduser                  3.113+nmu3ubuntu4             all          add and remove users and groups
+ii  apt                      1.2.24                        amd64        commandline package manager
+ii  base-files               9.4ubuntu4.5                  amd64        Debian base system miscellaneous files
+ ......
+ ......
+```
+
+#### 创建一个DaemonSet的Pod
+
+如果Kubernets DaemonSet被创建，被定义的Pod将会部署在每一台node节点上. 确保运行在node节点的容器占用同样的资源，此时，这个容器是作为daemon进程存在的；
+ 
+ ```
+ 
+ ```
